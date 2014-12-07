@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="main_color">@color/grey</color>
+    <color name="main_color">@color/grey</color> <!--主界面标题背景色-->
+    <color name="title_back">@color/orange</color> <!-- 其他界面标题背景色-->
+    <color name="service_back_grey">#D0D0D0</color> <!-- 上门服务界面内容背景色-->
+    <color name="service_back_white">@color/all_white</color> <!-- 上门服务界面内容背景色-->
 </resources>

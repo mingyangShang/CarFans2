@@ -9,4 +9,6 @@
     <color name="dark_grey">#D5D5D5</color>  <!-- 建议边框色 -->
     <color name="brown">#A36E04</color>  <!--棕色-->
     <color name="all_red">#ff0000</color>
+    <color name="orange">#EF9B11</color>   <!--橙色-->
+    <color name="light_orange">#E77817</color> <!-- 亮橙色 -->
 </resources>

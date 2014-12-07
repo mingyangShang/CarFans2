@@ -32,4 +32,10 @@
     <string name="title_main">车粉丝车主专属平台</string>
     <string name="title_activity_service">ServiceActivity</string>
 
+    <!--上门服务文字-->
+    <string name="title_service">上门服务</string>
+    <string name="home_maintenance">我要上门保养</string>
+    <string name="home_wash">我要上门洗车</string>
+    <string name="find_service">查找服务商家</string>
+
 </resources>

@@ -16,4 +16,28 @@
         <item name="android:textColor">@color/brown</item>
     </style>
 
+    <style name="TitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="WrapContentStyle">
+        <item name="android:textColor">@color/all_white</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="HomeServiceButtonStyle" parent="OrangeBack">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:textColor">@color/all_white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
 </resources>

@@ -13,10 +13,23 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
 
     <style name="SmallGreyTextStyle" parent="WrapContentStyle">
         <item name="android:textSize">@dimen/super_micro_text_size</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:layout_marginTop">-5dp</item>
+    </style>
+
+    <style name="OrangeBack">
+        <item name="android:background">@drawable/orange_rect</item>
     </style>
 </resources>
