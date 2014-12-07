@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarFans</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- -主界面IndexActivity文字 -->
+    <string name="person_title">汽车管家</string>
+    <string name="person_score">钟先生，您的积分:</string>
+    <string name="person_days">距离下次保养:90天</string>
+    <string name="person_center">个人中心</string>
+    <string name="traffic_zh">实时实景交通查询</string>
+    <string name="traffic_en">Real-time real traffic query</string>
+    <string name="gift_zh">优惠礼券</string>
+    <string name="gift_en">Redeem Points</string>
+    <string name="modify_zh">汽修美容店</string>
+    <string name="modify_en">Service Schedule</string>
+    <string name="loan_zh">车贷服务</string>
+    <string name="loan_en">Car Renewal</string>
+    <string name="driver_zh">代驾服务</string>
+    <string name="driver_en">Driving</string>
+    <string name="seccar_zh">二手车买卖</string>
+    <string name="seccar_en">Second-hand car</string>
+    <string name="violation_zh">违章查询</string>
+    <string name="violation_en">violation query</string>
+    <string name="rent_zh">闲车出租</string>
+    <string name="rent_en">Free-car rental</string>
+    <string name="more_zh">更多服务</string>
+    <string name="game_zh">抢豪车</string>
+    <string name="menu_logo">logo</string>
+    <string name="title_main">车粉丝车主专属平台</string>
+    <string name="title_activity_service">ServiceActivity</string>
+
+</resources>

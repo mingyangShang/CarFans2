@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:padding="5dp"
+    android:background="@color/grey">
+    <!--android:background="@drawable/main_bg">-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/logo"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:padding="5dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/title_main"/>
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/call"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/layout_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_call"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:text="客"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:text="服"/>
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/layout_call"
+        android:layout_margin="3dp"/>
+
+
+</RelativeLayout>

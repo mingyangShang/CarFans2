@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#808080</color>  <!-- 灰色 -->
+    <color name="grey">#F2F2F2</color>
+    <!--<color name="grey">#C6C6C6</color>   &lt;!&ndash;建议背景色&ndash;&gt;-->
+    <!--<color name="dark_grey">#eeeeee</color>    &lt;!&ndash; 深灰色，本次的背景色 &ndash;&gt;-->
+    <color name="all_white">#ffffff</color>  <!-- 纯白色-->
+    <color name="dark_grey">#D5D5D5</color>  <!-- 建议边框色 -->
+    <color name="brown">#A36E04</color>  <!--棕色-->
+    <color name="all_red">#ff0000</color>
+</resources>

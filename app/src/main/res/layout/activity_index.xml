@@ -1,0 +1,471 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--顶部标题栏-->
+        <include layout="@layout/title_main" />
+
+
+        <!--广告滑动布局-->
+        <com.ab.view.sliding.AbSlidingPlayView
+            android:id="@+id/mAbSlidingPlayView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <!--个人信息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/bg">
+
+            <ImageView
+                android:id="@+id/img_person"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/person" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_person"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_title"
+                    style="@style/UserInfoTextStyle"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_score"
+                    style="@style/UserInfoTextStyle"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_days"
+                    style="@style/UserInfoTextStyle"
+                    android:textSize="@dimen/medium_text_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_regi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/regist"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/img_regi"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/medium_text_size"
+                android:text="@string/person_center"/>
+        </RelativeLayout>
+
+
+        <!--工具按钮布局-->
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp">
+                    <!--实时实景车贷服务-->
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_traffic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/traffic_zh" />
+
+                        <TextView
+                            android:id="@+id/tv_traffic_en"
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_traffic"
+                            android:text="@string/traffic_en" />
+
+                        <ImageView
+                            android:id="@+id/img_traffic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/tv_traffic_en"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/traffic" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            style="@style/FuncImageBackStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_gift"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                style="@style/FuncTextStyle"
+                                android:text="@string/gift_zh" />
+
+                            <TextView
+                                android:id="@+id/tv_gift_en"
+                                style="@style/SmallGreyTextStyle"
+                                android:layout_below="@+id/tv_gift"
+                                android:text="@string/gift_en" />
+                            <!--\优惠券-->
+                            <ImageView
+                                android:id="@+id/img_gift"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv_gift_en"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/gift" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            style="@style/FuncImageBackStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:id="@+id/tv_modify"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                style="@style/FuncTextStyle"
+                                android:text="@string/modify_zh" />
+
+                            <TextView
+                                android:id="@+id/tv_modify_en"
+                                style="@style/SmallGreyTextStyle"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/tv_modify"
+                                android:text="@string/modify_en" />
+                            <!--汽修美容店-->
+                            <ImageView
+                                android:id="@+id/img_modify"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/modify" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="100dp">
+                    <!--车贷服务-->
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_loan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/loan" />
+
+                        <TextView
+                            android:id="@+id/tv_loan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_loan"
+                            android:layout_centerHorizontal="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/loan_zh" />
+
+                        <TextView
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_below="@+id/tv_loan"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/loan_en" />
+
+                    </RelativeLayout>
+
+
+                    <!--代驾服务-->
+
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_drive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/driving" />
+
+                        <TextView
+                            android:id="@+id/tv_drive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_drive"
+                            android:layout_centerHorizontal="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/driver_zh" />
+
+                        <TextView
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_below="@+id/tv_drive"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/driver_en" />
+
+                    </RelativeLayout>
+                    <!--二手车-->
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_seccar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sec_hand_car" />
+
+                        <TextView
+                            android:id="@+id/tv_seccar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_seccar"
+                            android:layout_centerHorizontal="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/seccar_zh" />
+
+                        <TextView
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_below="@+id/tv_seccar"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/seccar_en" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp">
+                    <!--专家咨询-->
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_violation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/violation_query" />
+
+                        <TextView
+                            android:id="@+id/tv_violation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_violation"
+                            android:layout_centerHorizontal="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/violation_zh" />
+
+                        <TextView
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_below="@+id/tv_violation"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/violation_en" />
+
+                    </RelativeLayout>
+                    <!--闲车出租-->
+                    <RelativeLayout
+                        style="@style/FuncImageBackStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_rent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            style="@style/FuncTextStyle"
+                            android:src="@drawable/rent" />
+
+                        <TextView
+                            android:id="@+id/tv_rent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_rent"
+                            android:layout_centerHorizontal="true"
+                            style="@style/FuncTextStyle"
+                            android:text="@string/rent_zh" />
+
+                        <TextView
+                            style="@style/SmallGreyTextStyle"
+                            android:layout_below="@+id/tv_rent"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/rent_en" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <!--更多服务-->
+                        <RelativeLayout
+                            style="@style/FuncImageBackStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="-10dp"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/more" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                style="@style/FuncTextStyle"
+                                android:text="@string/more_zh" />
+                        </RelativeLayout>
+
+
+                        <!--抢豪车-->
+                        <RelativeLayout
+                            style="@style/FuncImageBackStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img_game"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_weight="1"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/cargame" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                style="@style/FuncTextStyle"
+                                android:text="@string/game_zh" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="56dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+    </merge>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IndexActivity" >
+
+    <item android:id="@+id/logo"
+        android:title="@string/menu_logo"
+        android:icon="@drawable/logo"
+        android:showAsAction="always"/>
+</menu>
