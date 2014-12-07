@@ -21,16 +21,23 @@
         <activity
             android:name=".controller.ServiceActivity"
             android:label="@string/title_activity_service" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-        <!--二手车买卖界面-->
+        <!-- 二手车买卖界面 -->
         <activity
             android:name=".controller.SecCarActivity"
             android:label="@string/title_activity_sec_car" >
+        </activity>
+        <!--车贷界面-->
+        <activity
+            android:name=".controller.CarLoanActivity"
+            android:label="@string/title_activity_car_loan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

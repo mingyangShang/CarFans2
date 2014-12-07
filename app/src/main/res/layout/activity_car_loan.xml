@@ -15,11 +15,11 @@
             android:layout_marginLeft="10dp"
             android:background="@null"
             android:scaleType="fitCenter"
-            android:src="@drawable/back" />
+            android:src="@drawable/menu" />
 
         <TextView
             style="@style/TitleTextStyle"
-            android:text="@string/title_seccar" />
+            android:text="@string/title_service" />
 
         <ImageView
             android:layout_width="32dp"
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/sec_car" />
+                android:src="@drawable/carloan_adver" />
 
             <View
                 android:layout_width="match_parent"
@@ -62,19 +62,23 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="30dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/seccar_producre" />
+                android:src="@drawable/carloan_flow" />
 
             <TextView
                 style="@style/HomeServiceButtonStyle"
-                android:text="@string/publish_car" />
-
-            <TextView
-                style="@style/HomeServiceButtonStyle"
-                android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/look_car" />
+                android:text="@string/apply_loan" />
+
+
+
 
         </LinearLayout>
     </ScrollView>
 
+    <!--<ImageView-->
+    <!--android:id="@+id/img_online_service"-->
+    <!--style="@style/WrapContentStyle"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--android:src="@drawable/online_service" />-->
 </merge>

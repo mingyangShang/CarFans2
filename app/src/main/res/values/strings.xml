@@ -43,5 +43,10 @@
     <string name="publish_car">现在发布</string>
     <string name="look_car">马上看车</string>
     <string name="title_activity_sec_car">SecCarActivity</string>
+    <string name="title_activity_car_loan">CarLoanActivity</string>
+    
+    <!--车贷文字-->
+    <string name="title_carloan"></string>
+    <string name="apply_loan">在线申请</string>
 
 </resources>
