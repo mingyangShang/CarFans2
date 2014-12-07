@@ -11,16 +11,26 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <!--主界面的actiivity-->
+
+        <!-- 主界面的actiivity -->
         <activity
             android:name=".controller.IndexActivity"
             android:label="@string/app_name" >
-
         </activity>
-        <!--上门服务界面-->
+        <!-- 上门服务界面 -->
         <activity
             android:name=".controller.ServiceActivity"
             android:label="@string/title_activity_service" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--二手车买卖界面-->
+        <activity
+            android:name=".controller.SecCarActivity"
+            android:label="@string/title_activity_sec_car" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
